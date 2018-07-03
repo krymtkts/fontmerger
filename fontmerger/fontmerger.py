@@ -189,9 +189,9 @@ class FontMerger(object):
             fontname = '{0}-{1}-{2}'.format(fontname, suffix, subfamily)
             familyname = '{0} {1}'.format(familyname, suffix)
             fullname = '{0} {1}'.format(familyname, subfamily)
-        self.base_font.familyname = familyname
-        self.base_font.fullname = fullname
-        self.base_font.fontname = fontname
+            self.base_font.familyname = familyname
+            self.base_font.fullname = fullname
+            self.base_font.fontname = fontname
         self.base_font.appendSFNTName('English (US)', 'Preferred Family', familyname)
         self.base_font.appendSFNTName('English (US)', 'Compatible Full', fullname)
         self.base_font.appendSFNTName('English (US)', 'SubFamily', subfamily)
